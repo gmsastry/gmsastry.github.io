@@ -145,8 +145,8 @@ export default function ContactPage() {
                       <Mail className="w-8 h-8 flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-bold mb-2 font-mono uppercase">Email</h3>
-                        <a href="mailto:contact@mruthyunjayasastry.org" className="text-primary hover:underline">
-                          contact@mruthyunjayasastry.org
+                        <a href="mailto:gmsastryhyd@gmail.com" className="text-primary hover:underline">
+                          gmsastryhyd@gmail.com
                         </a>
                       </div>
                     </Card>
@@ -155,7 +155,7 @@ export default function ContactPage() {
                       <Phone className="w-8 h-8 flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-bold mb-2 font-mono uppercase">Phone</h3>
-                        <p>+91 (XXX) XXX-XXXX</p>
+                        <p>+91 9848474646</p>
                       </div>
                     </Card>
 
@@ -172,12 +172,16 @@ export default function ContactPage() {
                 {/* Google Map */}
                 <div>
                   <h3 className="text-2xl font-bold mb-4 font-mono uppercase">Find Us</h3>
-                  <div className="border-4 border-foreground h-[300px] bg-muted flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <MapPin className="w-16 h-16 mx-auto mb-4" />
-                      <p className="font-mono">Google Map Integration</p>
-                      <p className="text-sm text-muted-foreground mt-2">Hyderabad, Telangana, India</p>
-                    </div>
+                  <div className="border-4 border-foreground overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4351.492842168035!2d78.56313731127403!3d17.44452558338344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bf7f9345a31%3A0xa6e33ac209e60c09!2sGK%20Arunodaya%20Enclave!5e1!3m2!1sen!2sus!4v1764208079207!5m2!1sen!2sus"
+                      width="100%"
+                      height="300"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
                   </div>
                 </div>
               </div>

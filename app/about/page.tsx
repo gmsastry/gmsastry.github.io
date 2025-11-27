@@ -127,7 +127,7 @@ export default function AboutPage() {
               <div>
                 <Card className="border-4 border-foreground overflow-hidden mb-8">
                   <div className="relative h-[400px]">
-                    <Image src="/images/image.png" alt="International conference" fill className="object-cover" />
+                    <Image src="/images/image2.png" alt="International conference" fill className="object-cover" />
                   </div>
                 </Card>
               </div>

@@ -1,0 +1,42 @@
+{
+  "app": {
+    "[project]/gmsastry.github.io/app/_not-found/page": [
+      "static/media/0c89a48fa5027cee-s.p.4564287c.woff2",
+      "static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+      "static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2"
+    ],
+    "[project]/gmsastry.github.io/app/about/page": [
+      "static/media/0c89a48fa5027cee-s.p.4564287c.woff2",
+      "static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+      "static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2"
+    ],
+    "[project]/gmsastry.github.io/app/contact/page": [
+      "static/media/0c89a48fa5027cee-s.p.4564287c.woff2",
+      "static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+      "static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2"
+    ],
+    "[project]/gmsastry.github.io/app/gallery/page": [
+      "static/media/0c89a48fa5027cee-s.p.4564287c.woff2",
+      "static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+      "static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2"
+    ],
+    "[project]/gmsastry.github.io/app/mission/page": [
+      "static/media/0c89a48fa5027cee-s.p.4564287c.woff2",
+      "static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+      "static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2"
+    ],
+    "[project]/gmsastry.github.io/app/page": [
+      "static/media/0c89a48fa5027cee-s.p.4564287c.woff2",
+      "static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+      "static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2"
+    ],
+    "[project]/gmsastry.github.io/app/projects/page": [
+      "static/media/0c89a48fa5027cee-s.p.4564287c.woff2",
+      "static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+      "static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

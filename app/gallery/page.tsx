@@ -7,17 +7,17 @@ import { Card } from "@/components/ui/card"
 export default function GalleryPage() {
   const images = [
     {
-      src: "/images/image.png",
+      src: "/images/image1.png",
       title: "Public Speaking",
       desc: "Addressing conference on humanitarian issues",
     },
     {
-      src: "/images/image.png",
+      src: "/images/image2.png",
       title: "International Conference",
       desc: "Networking with global leaders and activists",
     },
     {
-      src: "/images/image.png",
+      src: "/images/image3.png",
       title: "TCS Team",
       desc: "With colleagues during consulting days",
     },

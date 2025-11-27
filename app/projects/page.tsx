@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       year: "1995-2005",
       beneficiaries: "10,000+ farmers",
       desc: "Facilitated conversion of dairy cooperatives to MACS Act platform, providing governance support to Sangam Dairy, Krishna Dairy, and Vizag Dairy. Promoted women's dairy cooperatives in Karimnagar district.",
-      image: "/images/image.png",
+      image: "/images/image6.png",
     },
     {
       title: "Natural Resource Management",
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       year: "2003-2005",
       beneficiaries: "15 NGOs, thousands of community members",
       desc: "Coordinated network of 15 NGOs in Telangana for watershed development, organic farming, non-pesticidal management, and sustainable agriculture. Advocated for policy changes in grazing rights.",
-      image: "/rural-farming-cooperative.jpg",
+      image: "/images/image5.png",
     },
     {
       title: "HIV/AIDS Community Support",
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
       year: "2005-2008",
       beneficiaries: "17,000+ CBO members",
       desc: "Enabled state-level CBO networks for people living with HIV/AIDS. Advocated for health insurance coverage and harm reduction programmes in major cities. Managed projects worth Rs 3 crores.",
-      image: "/community-health-support.jpg",
+      image: "/images/image7.png",
     },
     {
       title: "Water & Sanitation Advocacy",
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
       year: "2008-2010",
       beneficiaries: "Regional impact across 4 countries",
       desc: "Led Freshwater Action Network South Asia, coordinating civil society organizations across India, Bangladesh, Pakistan, and Nepal. Engaged with World Bank and global frameworks for WATSAN issues.",
-      image: "/water-sanitation-development.jpg",
+      image: "/images/image8.png",
     },
     {
       title: "Tribal Welfare & Forest Produce",
@@ -45,16 +45,16 @@ export default function ProjectsPage() {
       year: "1992-1994",
       beneficiaries: "Tribal communities",
       desc: "Established sustainable collection and marketing systems for non-timber forest products (NTFP), primarily Gum Karaya, through Girijan Cooperative Corporation.",
-      image: "/tribal-community-forest.jpg",
+      image: "/images/image9.jpg",
     },
-    {
-      title: "Cooperative Legislation Advocacy",
-      location: "Multiple Indian States",
-      year: "1995-2005",
-      beneficiaries: "1000+ cooperatives",
-      desc: "Advocated with Madhya Pradesh and Karnataka governments to introduce liberal cooperative legislation similar to APMACS Act. Provided professional support to 60+ NGOs.",
-      image: "/policy-advocacy-meeting.jpg",
-    },
+    // {
+    //   title: "Cooperative Legislation Advocacy",
+    //   location: "Multiple Indian States",
+    //   year: "1995-2005",
+    //   beneficiaries: "1000+ cooperatives",
+    //   desc: "Advocated with Madhya Pradesh and Karnataka governments to introduce liberal cooperative legislation similar to APMACS Act. Provided professional support to 60+ NGOs.",
+    //   image: "/policy-advocacy-meeting.jpg",
+    // },
   ]
 
   return (
