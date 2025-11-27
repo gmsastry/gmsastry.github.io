@@ -52,7 +52,7 @@ export default function HomePage() {
               </div>
               <div className="relative h-[500px] border-4 border-foreground overflow-hidden">
                 <Image
-                  src="/images/image.png"
+                  src="/images/image1.png"
                   alt="Mruthyunjaya Sastry Gabbita speaking at a conference"
                   fill
                   className="object-cover"
@@ -71,7 +71,7 @@ export default function HomePage() {
                 { number: "40+", label: "Years of Experience" },
                 { number: "1000+", label: "Communities Impacted" },
                 { number: "60+", label: "NGOs Supported" },
-                { number: "5", label: "Countries Visited" },
+                { number: "15+", label: "Countries Visited" },
               ].map((stat, index) => (
                 <div key={index} className="text-center border-4 border-secondary-foreground p-6">
                   <div className="text-4xl md:text-5xl font-bold mb-2 font-mono">{stat.number}</div>
