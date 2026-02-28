@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Briefcase, Award, DollarSign, CheckCircle } from "lucide-react"
 import { useState } from "react"
 
 export default function ContactPage() {
@@ -43,21 +43,171 @@ export default function ContactPage() {
         {/* Hero */}
         <section className="py-20 border-b-4 border-foreground bg-muted">
           <div className="container mx-auto px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-mono uppercase">Contact Us</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-mono uppercase">Contact for Work</h1>
             <p className="text-2xl max-w-3xl leading-relaxed">
-              Get in touch to learn more about our work, collaborate on projects, or support our mission for global
-              peace and disarmament.
+              Available for consulting, program management, and advisory services. Bringing 40+ years of expertise in
+              cooperative development, project management, and organizational strategy.
             </p>
+          </div>
+        </section>
+
+        {/* Professional Services */}
+        <section className="py-20 border-b-4 border-foreground bg-primary text-primary-foreground">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center font-mono uppercase">
+              Professional Services Available
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {[
+                {
+                  icon: Briefcase,
+                  title: "Program Management",
+                  desc: "Expert leadership in cooperative development, NGO capacity building, and multi-stakeholder project coordination. Proven track record managing programs worth crores across multiple states.",
+                },
+                {
+                  icon: Award,
+                  title: "Strategic Consulting",
+                  desc: "Management consultancy for cooperatives, sustainable businesses, and social enterprises. Specialized in organizational development, governance frameworks, and policy advocacy.",
+                },
+                {
+                  icon: CheckCircle,
+                  title: "Impact Evaluation",
+                  desc: "Comprehensive impact studies and program evaluations. Experience conducting assessments for UNICEF, Government agencies, and international development organizations.",
+                },
+              ].map((service, index) => (
+                <Card
+                  key={index}
+                  className="p-8 border-4 border-primary-foreground bg-background text-foreground hover:bg-primary-foreground hover:text-primary transition-colors"
+                >
+                  <service.icon className="w-12 h-12 mb-4" strokeWidth={3} />
+                  <h3 className="text-xl font-bold mb-3 font-mono uppercase">{service.title}</h3>
+                  <p className="leading-relaxed">{service.desc}</p>
+                </Card>
+              ))}
+            </div>
+
+            {/* Rate Card */}
+            <Card className="border-4 border-primary-foreground bg-background text-foreground p-8 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <DollarSign className="w-12 h-12" strokeWidth={3} />
+                <div>
+                  <h3 className="text-3xl font-bold font-mono uppercase">Professional Rate</h3>
+                  <p className="text-5xl font-bold mt-2 text-primary">$1,000 / Day</p>
+                </div>
+              </div>
+              <p className="text-center text-lg leading-relaxed mt-6">
+                Competitive daily rate for desk-based consulting, program management, strategic advisory, and evaluation
+                services. Flexible engagement models available for short-term and long-term projects.
+              </p>
+            </Card>
+          </div>
+        </section>
+
+        {/* Core Expertise */}
+        <section className="py-20 border-b-4 border-foreground">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold mb-12 text-center font-mono uppercase">Areas of Expertise</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                "Cooperative Development & MACS Act Implementation",
+                "NGO Capacity Building & Network Coordination",
+                "Program Management & Project Evaluation",
+                "Water & Sanitation Advocacy (WATSAN)",
+                "Natural Resource Management & Watershed Development",
+                "HIV/AIDS Community Support Programs",
+                "Organizational Governance & Policy Frameworks",
+                "Impact Studies & Research Services",
+                "Dairy Cooperative Management",
+                "Non-Timber Forest Produce (NTFP) Systems",
+                "Community-Based Organization (CBO) Development",
+                "International Development & Cross-Border Coordination",
+              ].map((expertise, index) => (
+                <Card key={index} className="p-6 border-4 border-foreground bg-muted hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <p className="font-mono leading-relaxed">{expertise}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Track Record */}
+        <section className="py-20 border-b-4 border-foreground bg-secondary text-secondary-foreground">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold mb-12 text-center font-mono uppercase">Proven Track Record</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { number: "60+", label: "NGOs Supported" },
+                { number: "1000+", label: "Cooperatives Advised" },
+                { number: "50K+", label: "Direct Beneficiaries" },
+                { number: "40+", label: "Years Experience" },
+              ].map((stat, index) => (
+                <Card key={index} className="text-center border-4 border-secondary-foreground p-8 bg-background text-foreground">
+                  <div className="text-5xl font-bold mb-2 font-mono text-primary">{stat.number}</div>
+                  <div className="text-sm uppercase font-mono">{stat.label}</div>
+                </Card>
+              ))}
+            </div>
+
+            <div className="mt-12 max-w-4xl mx-auto">
+              <Card className="p-8 border-4 border-secondary-foreground bg-background text-foreground">
+                <h3 className="text-2xl font-bold mb-6 font-mono uppercase">Notable Engagements</h3>
+                <ul className="space-y-4 leading-relaxed">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-primary" />
+                    <span>
+                      <strong>AMUL (1987-1989):</strong> Management professional handling production, quality control,
+                      and technical services with computer-based optimization
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-primary" />
+                    <span>
+                      <strong>Tata Consultancy Services (1990-1995):</strong> Management consultant for cooperative
+                      corporations and sustainable business models
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-primary" />
+                    <span>
+                      <strong>Cooperative Development Foundation (1995-2005):</strong> Advisor supporting 60+ NGOs and
+                      1000+ cooperatives across India
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-primary" />
+                    <span>
+                      <strong>International HIV/AIDS Alliance (2005-2008):</strong> Program Officer managing Rs 3 crore
+                      projects with 17,000+ CBO members
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-primary" />
+                    <span>
+                      <strong>Freshwater Action Network South Asia (2008-2010):</strong> Regional Coordinator leading
+                      network across India, Bangladesh, Pakistan, and Nepal
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-primary" />
+                    <span>
+                      <strong>Development and Research Services (2010+):</strong> Senior Manager conducting impact
+                      studies for UNICEF, Ministry of HRD, and Indian Red Cross
+                    </span>
+                  </li>
+                </ul>
+              </Card>
+            </div>
           </div>
         </section>
 
         {/* Contact Form & Info */}
         <section className="py-20 border-b-4 border-foreground">
           <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold mb-12 text-center font-mono uppercase">Get in Touch</h2>
             <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Form */}
               <div>
-                <h2 className="text-3xl font-bold mb-8 font-mono uppercase">Send a Message</h2>
+                <h3 className="text-3xl font-bold mb-8 font-mono uppercase">Inquiry Form</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <Label htmlFor="name" className="font-mono uppercase mb-2 block">
@@ -139,7 +289,7 @@ export default function ContactPage() {
               {/* Contact Info */}
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-3xl font-bold mb-8 font-mono uppercase">Contact Information</h2>
+                  <h3 className="text-3xl font-bold mb-8 font-mono uppercase">Contact Information</h3>
                   <div className="space-y-6">
                     <Card className="p-6 border-4 border-foreground flex items-start gap-4">
                       <Mail className="w-8 h-8 flex-shrink-0 mt-1" />
@@ -192,9 +342,10 @@ export default function ContactPage() {
         {/* WhatsApp CTA */}
         <section className="py-20 bg-[#25D366] text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-6 font-mono uppercase">Connect on WhatsApp</h2>
+            <h2 className="text-4xl font-bold mb-6 font-mono uppercase">Quick Consultation</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              For quick questions or urgent matters, reach out to us directly on WhatsApp.
+              For immediate inquiries about consulting services, project collaboration, or professional engagements,
+              reach out directly on WhatsApp.
             </p>
             <a
               href="https://wa.me/919848746446"
